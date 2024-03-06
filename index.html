@@ -2,21 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Loading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="shortcut icon" href="icon.png">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="col-lg-12">
-                    <h1 style="text-align:center;"><br><span class="auto-type"></span></h1>
-                  </div>
+    <h1 style="text-align:center;">Login to <span class="auto-type"></span></h1>
+        
                   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
 var typed = new Typed(".auto-type", { 
-strings: ["hey there ! 101 - Under construction","Try again After few minutes"],
-typeSpeed: 125,
-backSpeed: 25,
+strings: ["Your GoDrive"," Goriber Drive"],
+typeSpeed: 180,
+backSpeed: 20,
 loop: true
   })
 </script>
+    <form id="login-form">
+        <label for="username"></label>
+        <input type="text" placeholder="User Name" id="username" name="username" required>
+        <label for="password"></label>
+        <input type="password" placeholder="Password"id="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p id="message"></p>
+<h4 style="text-align:center;">Don't have any real id ?<a href="https://docs.google.com/forms/d/e/1FAIpQLScoW3SHe1d_IQyRKNJ9LbSridA9mZpVjftwTmcQIfhcDNoRlA/viewform?usp=sf_link"> Get one</a>
+</h4> 
+    <script src="login.js"></script>
 </body>
 </html>
