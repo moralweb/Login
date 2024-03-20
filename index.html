@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login System</title>
-    <link rel="shortcut icon" href="icon.png">
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login system</title>
+  <link rel="icon" type="image/x-icon" href="Icon.ico">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <h1 style="text-align:center;">Login to <span class="auto-type"></span></h1>
-        
+<!-- partial:index.partial.html -->
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+                    <h1 style="">GoDrive<br><span class="auto-type type"></span></h1>
                   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
 var typed = new Typed(".auto-type", { 
-strings: ["Your GoDrive"," Goriber Drive"],
-typeSpeed: 180,
-backSpeed: 20,
-loop: true
+strings: ["Demo"],
+typeSpeed: 115,
   })
 </script>
-    <form id="login-form">
-        <label for="username"></label>
-        <input type="text" placeholder="User Name" id="username" name="username" required>
-        <label for="password"></label>
-        <input type="password" placeholder="Password"id="password" name="password" required>
-        <button type="submit">Login</button>
-    </form>
-    <p id="message"></p>
-<h4 style="text-align:center;">Don't have any real id ?<a href="https://docs.google.com/forms/d/e/1FAIpQLScoW3SHe1d_IQyRKNJ9LbSridA9mZpVjftwTmcQIfhcDNoRlA/viewform?usp=sf_link"> Get one</a>
-</h4> 
-    <script src="login.js"></script>
+			<form id="login-form"class="login">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" id="username" class="login__input" placeholder="Username" required="">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" id="password" class="login__input" placeholder="Password" required="">
+				</div>
+			  <p style="color:red"id="message"></p>
+				<button type="submit"class="button login__submit">
+					<span class="button__text">Log in</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>				
+			</form>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+  <script src="main.js"></script>
+  
 </body>
 </html>
